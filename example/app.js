@@ -1,2 +1,0 @@
-require('archy');
-require('jasmine');

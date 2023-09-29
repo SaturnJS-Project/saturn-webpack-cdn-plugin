@@ -1,4 +1,4 @@
-*Note:* This only works on Webpack 4, if you're still on Webpack 3 or below please use version 1.x
+This is a forked repo of https://github.com/shirotech/webpack-cdn-plugin. Modification has been made so that the CDN network is switched to Filecoin Saturn
 
 ## CDN extension for the HTML Webpack Plugin
 
@@ -74,12 +74,12 @@ This will generate an `index.html` file with something like below:
   <head>
     <meta charset="UTF-8">
     <title>Webpack App</title>
-    <link href="//unpkg.com/vue@2.3.3/dist/vue.css" rel="stylesheet">
+    <link href="//localhost:3000/vue@2.3.3/dist/vue.css" rel="stylesheet">
   </head>
   <body>
-  <script type="text/javascript" src="https://unpkg.com/vue@2.5.17/dist/vue.runtime.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/vuex@3.0.1/dist/vuex.min.js"></script>
+  <script type="text/javascript" src="https://localhost:3000/vue@2.5.17/dist/vue.runtime.min.js"></script>
+  <script type="text/javascript" src="https://localhost:3000/vue-router@3.0.1/dist/vue-router.min.js"></script>
+  <script type="text/javascript" src="https://localhost:3000/vuex@3.0.1/dist/vuex.min.js"></script>
   <script type="text/javascript" src="/assets/app.js"></script>
   </body>
 </html>
@@ -221,7 +221,7 @@ Overrides the global devUrl, allowing you to specify the location for a specific
 
 `prod` flag defaults to `true`, which will output uri using the CDN, when `false` it will use the file from `node_modules` folder locally.
 
-##### `prodUrl`:`string` | `//unpkg.com/:name@:version/:path`
+##### `prodUrl`:`string` | `//localhost:3000/:name@:version/:path`
 
 You can specify a custom template url with the following replacement strings:
 
@@ -231,7 +231,7 @@ You can specify a custom template url with the following replacement strings:
 
 `:path`: The path to the file e.g. `lib/app.min.js`
 
-A common example is you can use cdnjs e.g. `//cdnjs.cloudflare.com/ajax/libs/:name/:version/:path`. If not specified it will fallback to using unpkg.com.
+A common example is you can use cdnjs e.g. `//cdnjs.cloudflare.com/ajax/libs/:name/:version/:path`. If not specified it will fallback to using localhost:3000.
 
 ##### `devUrl`:`string` | `/:name/:path`
 

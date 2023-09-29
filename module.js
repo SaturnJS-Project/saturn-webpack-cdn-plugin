@@ -15,7 +15,7 @@ class WebpackCdnPlugin {
   constructor({
     modules,
     prod,
-    prodUrl = 'https://unpkg.com/:name@:version/:path',
+    prodUrl = 'https://localhost:3000/:name@:version/:path',
     devUrl = ':name/:path',
     publicPath,
     optimize = false,

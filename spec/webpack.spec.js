@@ -215,17 +215,17 @@ describe('Webpack Integration', () => {
       it('should output the right assets (css)', () => {
         expect(cssAssets).toEqual([
           '/assets/local.css',
-          `https://unpkg.com/nyc@${versions.nyc}/style.css`,
-          `https://unpkg.com/jasmine2@${versions.jasmine}/style.css`,
+          `https://localhost:3000/npm//npm//nyc@${versions.nyc}/style.css`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/style.css`,
         ]);
       });
 
       it('should output the right assets (js)', () => {
         expect(jsAssets).toEqual([
           '/assets/local.js',
-          `https://unpkg.com/jasmine-spec-reporter@${versions.jasmineSpecReporter}/index.js`,
-          `https://unpkg.com/nyc@${versions.nyc}/index.js`,
-          `https://unpkg.com/jasmine2@${versions.jasmine}/lib/jasmine.js`,
+          `https://localhost:3000/npm//npm//jasmine-spec-reporter@${versions.jasmineSpecReporter}/index.js`,
+          `https://localhost:3000/npm//npm//nyc@${versions.nyc}/index.js`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/lib/jasmine.js`,
           '/assets/app.js',
         ]);
       });
@@ -335,29 +335,29 @@ describe('Webpack Integration', () => {
       it('should output the right assets (css)', () => {
         expect(cssAssets).toEqual([
           '/assets/local.css',
-          `https://unpkg.com/nyc@${versions.nyc}/style.css`,
-          `https://unpkg.com/jasmine2@${versions.jasmine}/style.css`,
+          `https://localhost:3000/npm//npm//nyc@${versions.nyc}/style.css`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/style.css`,
         ]);
         expect(cssAssets2).toEqual([
           '/assets/local.css',
-          `https://unpkg.com/nyc@${versions.nyc}/style.css`,
-          `https://unpkg.com/archy@${versions.archy}/style.css`,
+          `https://localhost:3000/npm//npm//nyc@${versions.nyc}/style.css`,
+          `https://localhost:3000/npm//npm//archy@${versions.archy}/style.css`,
         ]);
       });
 
       it('should output the right assets (js)', () => {
         expect(jsAssets).toEqual([
           '/assets/local.js',
-          `https://unpkg.com/jasmine-spec-reporter@${versions.jasmineSpecReporter}/index.js`,
-          `https://unpkg.com/nyc@${versions.nyc}/index.js`,
-          `https://unpkg.com/jasmine2@${versions.jasmine}/lib/jasmine.js`,
+          `https://localhost:3000/npm//npm//jasmine-spec-reporter@${versions.jasmineSpecReporter}/index.js`,
+          `https://localhost:3000/npm//npm//nyc@${versions.nyc}/index.js`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/lib/jasmine.js`,
           '/assets/app.js',
         ]);
         expect(jsAssets2).toEqual([
           '/assets/local.js',
-          `https://unpkg.com/jasmine-core@${versions.jasmineCore}/index.js`,
-          `https://unpkg.com/nyc@${versions.nyc}/index.js`,
-          `https://unpkg.com/archy@${versions.archy}/index.js`,
+          `https://localhost:3000/npm//npm//jasmine-core@${versions.jasmineCore}/index.js`,
+          `https://localhost:3000/npm//npm//nyc@${versions.nyc}/index.js`,
+          `https://localhost:3000/npm//npm//archy@${versions.archy}/index.js`,
           '/assets/app.js',
         ]);
       });
@@ -375,19 +375,19 @@ describe('Webpack Integration', () => {
 
       it('should output the right assets (css)', () => {
         expect(cssAssets).toEqual([
-          `https://unpkg.com/jasmine2@${versions.jasmine}/style1.css`,
-          `https://unpkg.com/jasmine2@${versions.jasmine}/style2.css`,
-          `https://unpkg.com/archy@${versions.archy}/style1.css`,
-          `https://unpkg.com/archy@${versions.archy}/style2.css`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/style1.css`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/style2.css`,
+          `https://localhost:3000/npm//npm//archy@${versions.archy}/style1.css`,
+          `https://localhost:3000/npm//npm//archy@${versions.archy}/style2.css`,
         ]);
       });
 
       it('should output the right assets (js)', () => {
         expect(jsAssets).toEqual([
-          `https://unpkg.com/jasmine2@${versions.jasmine}/index1.js`,
-          `https://unpkg.com/jasmine2@${versions.jasmine}/index2.js`,
-          `https://unpkg.com/archy@${versions.archy}/index1.js`,
-          `https://unpkg.com/archy@${versions.archy}/index2.js`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/index1.js`,
+          `https://localhost:3000/npm//npm//jasmine2@${versions.jasmine}/index2.js`,
+          `https://localhost:3000/npm//npm//archy@${versions.archy}/index1.js`,
+          `https://localhost:3000/npm//npm//archy@${versions.archy}/index2.js`,
           '/app.js',
         ]);
       });
